@@ -65,7 +65,7 @@ public class PlayerController : MonoBehaviour
     private void Flip()
     {
         //Changes Direction of Object
-        if (IsFacingRight && Horizontal > 0f || !IsFacingRight && Horizontal > 0f)
+        if (IsFacingRight && Horizontal > 0f || !IsFacingRight && Horizontal < 0f)
         {
             IsFacingRight = !IsFacingRight;
             Vector3 LocalScale = transform.localScale;
